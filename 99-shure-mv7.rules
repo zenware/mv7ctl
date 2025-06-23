@@ -1,0 +1,2 @@
+SUBSYSTEM=="usb", ATTRS{idVendor}=="14ed", ATTRS{idProduct}=="1012", ENV{.MV7_ID}="$env{BUSNUM}_$env{DEVNUM}", SYMLINK+="shure_mv7_$env{.MV7_ID}", MODE="0666", GROUP="audio"
+SUBSYSTEM=="hidraw", SUBSYSTEMS=="usb", ATTRS{idVendor}=="14ed", ATTRS{idProduct}=="1012", SYMLINK+="shure_mv7_hid_if$attr{bInterfaceNumber}", MODE="0666", GROUP="audio"

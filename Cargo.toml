@@ -1,0 +1,13 @@
+[package]
+name = "mv7ctl"
+authors = ["Jay Looney <jaylooney@pm.me>"]
+description = ""
+homepage = "https://github.com/zenware/mv7ctl"
+repository = "https://github.com/zenware/mv7ctl"
+license = "MIT"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.40", features = ["derive"] }
+rusb = "0.9.4"
