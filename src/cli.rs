@@ -29,6 +29,8 @@ pub enum Commands {
         #[arg(value_enum)]
         state: ToneState,
     },
+    /// Reset the device, similar to a replug and useful for debugging
+    Reset,
 }
 
 #[derive(Debug, Clone, ValueEnum)]
